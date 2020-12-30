@@ -1,6 +1,6 @@
 {
   "name": "vue3-virtual-table",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha1",
   "description": "",
   "main": "dist/vue3-virtual-table.ssr.js",
   "browser": "dist/vue3-virtual-table.esm.js",
@@ -20,7 +20,9 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vue3-virtual-list": "^1.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.0",
     "@babel/preset-env": "^7.12.0",
